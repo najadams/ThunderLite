@@ -71,7 +71,15 @@ const quickLinks = [
   },
 ];
 
-const AnimatedCounter = ({ value, prefix = "", suffix = "" }) => {
+const AnimatedCounter = ({
+  value,
+  prefix = "",
+  suffix = "",
+}: {
+  value: number;
+  prefix?: string;
+  suffix?: string;
+}) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
